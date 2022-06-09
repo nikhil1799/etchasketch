@@ -10,11 +10,12 @@
             cell.innerText = (i * v) + x;
             
             row.appendChild(cell); 
-            document.getElementById("gridsquare").style.border = "thick solid #0000FF";
+           
         } 
         e.appendChild(row); 
-        document.getElementById("gridsquare").style.border = "thick solid #0000FF";
+       
       } 
+      document.getElementById("gridsquare").style.border = "thick solid #0000FF";
       document.getElementById("code").innerText = e.innerHTML;
 
     }
