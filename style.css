@@ -3,16 +3,13 @@
   }
   
    
-   #container {
+   #grid {
         display: grid;
         grid-template-columns: repeat(var(--columns-row), 1fr);
         grid-template-rows: repeat(var(--columns-row), 1fr);
         width: 500px;
         height: 500px;
+        border: 1px solid #000;
     }
   
-    #grid {
   
-       border: 1px solid #000;
-    
-    }
