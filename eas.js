@@ -14,7 +14,7 @@ let btn = document.getElementById("start")
       var div = document.createElement("div");
       document.getElementById("grid").appendChild(div);
       div.addEventListener("mouseenter", function () {
-      this.style.backgroundColor = "red";
+      this.style.backgroundColor = "#cfc6fb";
     });
   }
 }
