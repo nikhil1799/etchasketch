@@ -1,22 +1,20 @@
+let btn = document.getElementById("start")
+  btn.addEventListener("click", createGrid)
 
-    function genDivs(v){ 
-      var e = document.body; // whatever you want to append the rows to: 
-      for(var i = 0; i < v; i++){ 
-        var row = document.createElement("div"); 
-        row.className = "row"; 
-        for(var x = 1; x <= v; x++){ 
-            var cell = document.createElement("div"); 
-            cell.className = "gridsquare"; 
-            cell.innerText = (i * v) + x;
-            
-            row.appendChild(cell); 
-           
-        } 
-        e.appendChild(row); 
-       
-      } 
-      document.getElementById("gridsquare").style.border = "thick solid #0000FF";
-      document.getElementById("code").innerText = e.innerHTML;
-
-    }
- 
+  function createGrid() {
+  var Container = document.getElementById("grid");
+    Container.innerHTML = '';
+  
+    let numberOfRows = prompt("How many rows do you want?");
+    let i = 0;
+    let x = numberOfRows * numberOfRows;
+    
+    document.documentElement.style.setProperty("--columns-row", numberOfRows);
+    for (i =  0; i < x ; i++) {
+      var div = document.createElement("div");
+      document.getElementById("grid").appendChild(div);
+      div.addEventListener("mouseenter", function () {
+      this.style.backgroundColor = "red";
+    });
+  }
+}
