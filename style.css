@@ -9,7 +9,11 @@
         grid-template-rows: repeat(var(--columns-row), 1fr);
         width: 500px;
         height: 500px;
-        border: 1px solid #000;
+        
     }
   
+    #box {
   
+       border: 1px solid #000;
+    
+    }

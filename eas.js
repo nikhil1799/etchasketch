@@ -12,6 +12,7 @@ let btn = document.getElementById("start")
     document.documentElement.style.setProperty("--columns-row", numberOfRows);
     for (i =  0; i < x ; i++) {
       var div = document.createElement("div");
+      div.setAttribute("id", "box");
       document.getElementById("grid").appendChild(div);
       div.addEventListener("mouseenter", function () {
       this.style.backgroundColor = "#cfc6fb";
